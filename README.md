@@ -295,3 +295,5 @@ Proposal templates
 
 Attachments support
 
+RUN THE APP IN PORT 5000 IN LOCAL EVERYTHING IS HARDCODED INCLUDING envs for convenience.
+
