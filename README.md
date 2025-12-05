@@ -294,6 +294,7 @@ Workflow automation
 Proposal templates
 
 Attachments support
+//replace geminiapi -->exposed envs might not work.
 
 RUN THE APP IN PORT 5000 IN LOCAL EVERYTHING IS HARDCODED INCLUDING envs for convenience.
 <img width="1855" height="857" alt="image" src="https://github.com/user-attachments/assets/52c9005e-a033-4b37-9c82-c965d60c365b" />
