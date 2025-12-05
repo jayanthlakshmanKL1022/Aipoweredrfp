@@ -296,4 +296,10 @@ Proposal templates
 Attachments support
 
 RUN THE APP IN PORT 5000 IN LOCAL EVERYTHING IS HARDCODED INCLUDING envs for convenience.
+<img width="1855" height="857" alt="image" src="https://github.com/user-attachments/assets/52c9005e-a033-4b37-9c82-c965d60c365b" />
+<img width="1891" height="838" alt="image" src="https://github.com/user-attachments/assets/77791e84-8fe7-4775-8bd3-16e1ceb91cf3" />
+<img width="1895" height="908" alt="image" src="https://github.com/user-attachments/assets/767b48e1-e434-4ebc-a811-ba79c2f0b4ed" />
+<img width="1887" height="902" alt="image" src="https://github.com/user-attachments/assets/082076aa-9cc9-4cd0-9e00-06b5f64d2b6d" />
+
+
 
