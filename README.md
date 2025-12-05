@@ -73,5 +73,76 @@ export default defineConfig([
 ])
 ```
 # Aipoweredrfp
-"An AI-powered RFP automation platform built using the MERN stack. It streamlines vendor management, enables sending individual and bulk proposal emails, and collects vendor responses. Integrated with Gemini AI, it analyzes responses and generates smart recommendations to support faster decision-making."
+.
+
+📌 Aipoweredrfp — AI-Powered RFP Automation Platform (MERN + Gemini AI)
+
+An AI-powered Request for Proposal (RFP) automation platform built using the MERN stack (MongoDB, Express, React, Node.js).
+This platform streamlines the end-to-end RFP workflow—vendor management, sending proposals, receiving responses, and AI-powered analysis using Google Gemini AI.
+
+🚀 Features
+✅ Vendor Management
+
+Add, edit, and delete vendors
+
+Store essential details like category, email, contact number, and average response time
+
+View and search vendor lists
+
+✉️ Proposal Automation
+
+Send proposals to individual vendors
+
+Send bulk proposals to multiple vendors at once
+
+Real-time email delivery status
+
+Automated professional proposal formatting generated using AI
+
+🤖 AI-Powered RFP Analysis (Gemini AI)
+
+Vendor responses are analyzed using Google Gemini API
+
+Generates insights & AI-recommended decisions
+
+Highlights risks, strengths, and weaknesses of each vendor’s response
+
+📩 Response Management
+
+Track and view individual vendor responses
+
+View bulk response summaries
+
+Responses structured for faster evaluation by procurement teams
+
+🖥️ Modern UI
+
+Built with React + Material UI (MUI)
+
+Clean dashboard with navigation
+
+Components for vendor forms, proposal screens, and response insights
+
+🧩 Tech Stack
+Frontend
+
+React (Vite + TypeScript)
+
+Material UI (MUI)
+
+Axios
+
+React Router
+
+Backend
+
+Node.js
+
+Express.js
+
+MongoDB + Mongoose
+
+Google Gemini AI API
+
+Nodemailer (Email service)
 
