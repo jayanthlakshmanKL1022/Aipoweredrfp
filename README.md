@@ -122,3 +122,176 @@ MongoDB + Mongoose
 Google Gemini AI API
 Nodemailer (Email service)
 
+📌 Project Highlights
+
+✉️ Send individual vendor proposal emails
+📦 Send bulk proposal emails
+🔁 Automated vendor replies (mocked for fast development)
+🤖 Gemini AI–powered RFP analysis
+📊 View AI-generated decision insights
+🧾 Manage vendors (create / view)
+📄 View all sent proposals (single + bulk)
+
+
+AI Tools Used
+Google Gemini (primary AI engine)
+ChatGPT (coding assistance)
+Lovable AI (UI generation support)
+
+⚙️ Project Setup
+1️⃣ Install Latest Tools
+Make sure the following are installed:
+Node.js 20+
+MongoDB Community / Atlas
+
+Git
+
+2️⃣ Clone Repository
+git clone https://github.com/jayanthlakshmanKL1022/Aipoweredrfp.git
+cd Aipoweredrfp
+
+3️⃣ Start Frontend
+npm install
+npm run dev
+
+4️⃣ Start Backend
+cd express-ts-backend
+npm install
+npm run dev
+
+
+🔥 Note:
+Environment variables are NOT used (for convenience).
+API keys + email config are hardcoded temporarily (dev-mode).
+Gemini API Key currently used:
+
+AIzaSyD5XSMJ9nFpvCO3wrWuSU4u11739ldmDyA
+
+🧩 Assumptions
+
+Vendor replies are automated AI-generated responses (not real email replies).
+
+Email sending uses Nodemailer, but for testing, no real inbox reading.
+
+Gemini AI produces: summary, highlights, weaknesses, recommendation.
+
+System runs locally — no deployments configured yet.
+
+🧭 Application Flow (Design Overview)
+1️⃣ Add Vendor
+
+→ User opens “Add Vendor” form
+→ Vendor stored in database (MongoDB)
+
+2️⃣ Create RFP
+
+→ User writes RFP content
+→ Selects:
+
+one vendor OR
+
+multiple vendors
+
+3️⃣ Send Proposal
+
+→ Backend triggers email sending
+→ AI generates formatted proposal content
+→ Store record in DB
+
+4️⃣ Vendor Replies (Automated)
+
+→ System auto-generates vendor reply
+→ Runs reply through Gemini AI for analysis
+→ Stores insights (strengths, risks, recommendation)
+
+5️⃣ View Responses
+
+Individual Proposal Responses
+
+Bulk Proposal Responses
+
+AI Reports screen /aireports
+
+🌐 API Documentation
+📮 Email API
+1. Send Individual Proposal
+POST /sendEmail
+
+
+Body
+
+{
+  "vendorEmail": "vendor@example.com",
+  "json": "RFP contents",
+  "companyName": "Vendor 1"
+}
+
+2. Send Bulk Proposal
+POST /sendbulkemail
+
+
+Body
+
+{
+  "vendorList": [...],
+  "rfp": "proposal content"
+}
+
+📁 Proposal Retrieval
+3. Get Individual Proposals
+GET /proposals
+
+4. Get Bulk Proposals
+GET /bulkproposals
+
+🧾 AI Reports
+5. AI Analysis Reports
+GET /aireports
+
+🏢 Vendor APIs
+6. Create Vendor
+POST /vendor/create
+
+
+Body
+
+{
+  "companyname": "Apex Solutions",
+  "category": "IT Services",
+  "email": "info@apex.com",
+  "contactnumber": "9876543210",
+  "avgresponsetime": "2 days"
+}
+
+7. Get Vendors
+GET /vendor/getVendors
+
+🗂️ Folder Structure
+Aipoweredrfp/
+│
+|             # React Frontend
+│── src/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   ├── assets/
+│   │   └── main.tsx
+│   └── package.json
+│
+├── express-ts-backend/   # Node + Express API
+│   ├── routes/
+│   ├── models/
+│   ├── controllers/
+│   └── server.ts
+│
+└── README.md
+
+🚀 Future Improvements
+Role-based authentication
+Real email inbox parsing
+Vendor scoring algorithm
+Workflow automation
+
+Proposal templates
+
+Attachments support
+
